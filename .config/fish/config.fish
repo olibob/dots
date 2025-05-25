@@ -5,11 +5,18 @@ end
 set fish_greeting
 
 # Aliases
-alias ls="lsd"
-alias l="ls -1tr"
-alias ll="ls -ltrh"
+# alias ls="lsd"
+alias ls="eza"
+alias l="eza -1 -s time --group-directories-first"
+alias ll="eza -l -s time -h --group-directories-first"
+alias lt="eza --tree --level 3"
+
 alias c="clear"
-alias lt="ls --tree"
+
+# alias l="ls -1tr"
+# alias ll="ls -ltrh"
+# alias lt="ls --tree"
+
 alias k="kubectl"
 alias t="terraform"
 alias v="nvim"
