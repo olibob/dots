@@ -91,6 +91,10 @@ set -gx MANPAGER "sh -c 'col -bx | nvim +Man!'"
 
 set -gx PATH (brew --prefix python)/libexec/bin $PATH
 
+# Claude path
+set -gx PATH "$HOME/.local/bin:$PATH"
+# Allow alt+enter to add a new line
+bind \e\r 'commandline -i \n'
 # Yasi
 function y
     set tmp (mktemp -t "yazi-cwd.XXXXXX")
